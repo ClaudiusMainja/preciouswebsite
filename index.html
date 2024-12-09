@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precious Dzingwe - Digital Marketing Strategist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'heading': ['Merriweather', 'serif'],
+                        'body': ['Open Sans', 'sans-serif']
+                    },
+                    colors: {
+                        'brand-pink': {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            500: '#ec4899',
+                            600: '#db2777',
+                            700: '#be185d'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ec4899;
+            border-radius: 4px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Particle Background */
+        #particle-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .particle {
+            position: absolute;
+            background: rgba(236, 72, 153, 0.3);
+            border-radius: 50%;
+            animation: float 10s infinite alternate;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50px); }
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-body">
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="fixed top-4 right-4 z-50 p-2 bg-brand-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm shadow-lg">
+        🌓
+    </button>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md z-40 transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center p-4 relative">
+            <div class="text-2xl font-bold text-brand-pink-600 font-heading">Precious Dzingwe</div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-toggle" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:text-brand-pink-500 transition-colors">Home</a></li>
+                <li><a href="#about" class="hover:text-brand-pink-500 transition-colors">About</a></li>
+                <li><a href="#competencies" class="hover:text-brand-pink-500 transition-colors">Competencies</a></li>
+                <li><a href="#experience" class="hover:text-brand-pink-500 transition-colors">Experience</a></li>
+                <li><a href="#campaign" class="hover:text-brand-pink-500 transition-colors">Campaigns</a></li>
+            </ul>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-white dark:bg-gray-800 shadow-lg transform -translate-y-full transition-transform">
+                <ul class="flex flex-col items-center space-y-4 py-4">
+                    <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                    <li><a href="#about" class="mobile-nav-link">About</a></li>
+                    <li><a href="#competencies" class="mobile-nav-link">Competencies</a></li>
+                    <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+                    <li><a href="#campaign" class="mobile-nav-link">Campaigns</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="relative min-h-screen flex items-center container mx-auto px-4 pt-20">
+        <div id="particle-container"></div>
+        <div class="grid md:grid-cols-2 gap-8 items-center z-10">
+            <div class="space-y-6 animate-fade-in">
+                <h1 class="text-4xl md:text-5xl font-bold text-brand-pink-600 font-heading">Digital Marketing Strategist</h1>
+                <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300">
+                    Innovative digital marketing expert with over 7 years of experience in creating high-impact strategies that drive measurable results.
+                </p>
+                <div class="flex space-x-4">
+                    <button class="bg-brand-pink-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-full hover:bg-brand-pink-700 transition-all">
+                        Download CV
+                    </button>
+                    <button class="border border-brand-pink-600 text-brand-pink-600 px-4 md:px-6 py-2 md:py-3 rounded-full hover:bg-brand-pink-50 transition-colors">
+                        Contact Me
+                    </button>
+                </div>
+            </div>
+            <div class="relative hidden md:block">
+                <div class="bg-brand-pink-100 dark:bg-gray-800 rounded-full w-96 h-96 mx-auto absolute inset-0 blur-2xl opacity-50"></div>
+                <img 
+                    src="/api/placeholder/500/600" 
+                    alt="Precious Dzingwe" 
+                    class="relative z-10 rounded-full shadow-2xl mx-auto hover:scale-105 transition-transform"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-4 py-16">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-brand-pink-600 font-heading mb-6">About Me</h2>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                    As a Bachelor of Commerce (Honors) in Finance graduate, I offer a unique blend of financial acumen and creative vision. My innovative approach to problem-solving enables me to develop tailored solutions that drive measurable results for my clients.
+                </p>
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>7+ Years of Digital Marketing Experience</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-brand-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>Expertise in Social Media & Paid Advertising</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-semibold text-brand-pink-500 mb-4 font-heading">Key Specializations</h3>
+                <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+                    <li>• Content creation and campaign development</li>
+                    <li>• Data-driven decision making</li>
+                    <li>• Social media management and paid advertising</li>
+                    <li>• Brand identity and visual storytelling</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competencies Section -->
+    <section id="competencies" class="bg-gray-50 dark:bg-gray-800 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-brand-pink-600 font-heading text-center mb-12">Core Competencies</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Social Media Strategy</h3>
+                    <p>Develop comprehensive social media strategies that align with business goals and target audience.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Content Creation</h3>
+                    <p>Craft engaging visual and written content that resonates with target audiences and drives engagement.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Analytics & Reporting</h3>
+                    <p>Leverage data-driven insights from Google Analytics and social media platforms to optimize strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script Section -->
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        themeToggle.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('-translate-y-full');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+
+        // Particle Background
+        function createParticles() {
+            const container = document.getElementById('particle-container');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.width = `${Math.random() * 10}px`;
+                particle.style.height = particle.style.width;
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                particle.style.animationDuration = `${5 + Math.random() * 10}s`;
+                container.appendChild(particle);
+            }
+        }
+        createParticles();
+    </script>
+</body>
+</html>
