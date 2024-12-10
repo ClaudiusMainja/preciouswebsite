@@ -4,73 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Precious Dzingwe - Digital Marketing Strategist</title>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'heading': ['Merriweather', 'serif'],
-                        'body': ['Open Sans', 'sans-serif']
-                    },
-                    colors: {
-                        'brand-pink': {
-                            50: '#fdf2f8',
-                            100: '#fce7f3',
-                            500: '#ec4899',
-                            600: '#db2777',
-                            700: '#be185d'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #ec4899;
-            border-radius: 4px;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in {
-            animation: fadeIn 1s ease-out;
-        }
-
-        /* Particle Background */
-        #particle-container {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
-        }
-        .particle {
-            position: absolute;
-            background: rgba(236, 72, 153, 0.3);
-            border-radius: 50%;
-            animation: float 10s infinite alternate;
-        }
-        @keyframes float {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-50px); }
-        }
-    </style>
+    <script src="/js/script.js" > </script>
+<link rel="stylesheet" href="/src/main.css">
+<link rel="stylesheet" href="/src/output.css">
 </head>
-<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-body">
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100  libre-baskerville-regular">
     <!-- Theme Toggle -->
     <button id="theme-toggle" class="fixed top-4 right-4 z-50 p-2 bg-brand-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm shadow-lg">
         🌓
@@ -79,7 +18,7 @@
     <!-- Navigation -->
     <nav id="navbar" class="fixed top-0 w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md z-40 transition-all duration-300">
         <div class="container mx-auto flex justify-between items-center p-4 relative">
-            <div class="text-2xl font-bold text-brand-pink-600 font-heading">Precious Dzingwe</div>
+            <div class="text-2xl font-bold text-brand-pink-600 font-heading">Precious D Mutau</div>
             
             <!-- Mobile Menu Toggle -->
             <button id="mobile-menu-toggle" class="md:hidden">
@@ -115,15 +54,15 @@
         <div id="particle-container"></div>
         <div class="grid md:grid-cols-2 gap-8 items-center z-10">
             <div class="space-y-6 animate-fade-in">
-                <h1 class="text-4xl md:text-5xl font-bold text-brand-pink-600 font-heading">Hi, I am Precious Mutau. A Digital Marketing Strategist</h1>
+                <h1 class="text-4xl md:text-5xl  text-brand-pink-600 libre-baskerville-bold">Hi, I am Precious D Mutau.<br> I'm a  Digital Marketing Strategist</h1>
                 <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300">
-                    Innovative digital marketing expert with over 7 years of experience in creating high-impact strategies that drive measurable results.
+               With over 7 years of experience in creating high-impact strategies that drive measurable results.
                 </p>
                 <div class="flex space-x-4">
-                    <button class="bg-brand-pink-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-full hover:bg-brand-pink-700 transition-all">
-                        Download CV
+                    <button class="bg-brand-pink-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-xl hover:bg-brand-pink-700 transition-all">
+                        Download Resume
                     </button>
-                    <button class="border border-brand-pink-600 text-brand-pink-600 px-4 md:px-6 py-2 md:py-3 rounded-full hover:bg-brand-pink-50 transition-colors">
+                    <button class="border border-brand-pink-600 text-brand-pink-600 px-4 md:px-6 py-2 md:py-3 rounded-xl hover:bg-brand-pink-50 transition-colors">
                         Contact Me
                     </button>
                 </div>
@@ -131,21 +70,22 @@
             <div class="relative hidden md:block">
                 <div class="bg-brand-pink-100 dark:bg-gray-800 rounded-full w-96 h-96 mx-auto absolute inset-0 blur-2xl opacity-50"></div>
                 <img 
-                    src="/api/placeholder/500/600" 
+                    src="/assets/images/hero image.png" 
                     alt="Precious Dzingwe" 
-                    class="relative z-10 rounded-full shadow-2xl mx-auto hover:scale-105 transition-transform"
+                    class="relative z-10 rounded-xl shadow-2xl mx-auto hover:scale-105 transition-transform"
                 />
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="container mx-auto px-4 py-16">
-        <div class="grid md:grid-cols-2 gap-8 items-center">
+     <div class="bg-gray-900 dark:bg-gray-800">
+    <section id="about" class="container mx-auto px-4 py-16 h-min-screen">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
             <div>
                 <h2 class="text-3xl font-bold text-brand-pink-600 font-heading mb-6">About Me</h2>
                 <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
-                    As a Bachelor of Commerce (Honors) in Finance graduate, I offer a unique blend of financial acumen and creative vision. My innovative approach to problem-solving enables me to develop tailored solutions that drive measurable results for my clients.
+                    As a Bachelor of Commerce (Honors) in Finance holder, I offer a unique blend of financial acumen and creative vision. My innovative approach to problem-solving enables me to develop tailored solutions that drive measurable results for my clients.
                 </p>
                 <div class="space-y-3">
                     <div class="flex items-center space-x-3">
@@ -163,8 +103,8 @@
                 </div>
             </div>
             <div>
-                <h3 class="text-2xl font-semibold text-brand-pink-500 mb-4 font-heading">Key Specializations</h3>
-                <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+                <h3 class="text-2xl font-semibold text-brand-pink-500 mb-4 font-heading animate-fadeInLeft">Key Specializations</h3>
+                <ul class="space-y-2 text-slate-50 dark:text-gray-400 text-xl">
                     <li>• Content creation and campaign development</li>
                     <li>• Data-driven decision making</li>
                     <li>• Social media management and paid advertising</li>
@@ -173,23 +113,39 @@
             </div>
         </div>
     </section>
+</div>
 
     <!-- Competencies Section -->
     <section id="competencies" class="bg-gray-50 dark:bg-gray-800 py-16">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-brand-pink-600 font-heading text-center mb-12">Core Competencies</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
-                    <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Social Media Strategy</h3>
-                    <p>Develop comprehensive social media strategies that align with business goals and target audience.</p>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-md hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Social Media Strategy and Planning</h3>
+                    <p>Develop and execute integrated social media strategies aligned with overall business objectives, including campaign planning, content calendars, and audience targeting</p>
                 </div>
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
-                    <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Content Creation</h3>
-                    <p>Craft engaging visual and written content that resonates with target audiences and drives engagement.</p>
+                    <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Content Creation(visual and written)</h3>
+                    <p>Oversee the creation of high-quality, engaging content (text and visuals) across various platforms, ensuring brand consistency and audience relevance</p>
                 </div>
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
                     <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Analytics & Reporting</h3>
-                    <p>Leverage data-driven insights from Google Analytics and social media platforms to optimize strategies.</p>
+                    <p>Track, analyze, and report on key performance indicators (KPIs) across all digital marketing channels, providing data-driven insights and recommendations for optimization.</p>
+                </div>
+
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Paid Social Media Advertising </h3>
+                    <p>Plan and execute targeted paid social media advertising campaigns to reach specific audiences and achieve marketing objectives.</p>
+                </div>
+
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Campaign Development & Execution </h3>
+                    <p> Develop and execute integrated digital marketing campaigns across multiple channels (search, social, email, display) to achieve specific marketing goals, including lead generation, brand awareness, and customer acquisition</p>
+                </div>
+
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Community Management & Engagement </h3>
+                    <p>  Build and nurture online communities by interacting with followers, responding to inquiries, and fostering meaningful conversations.</p>
                 </div>
             </div>
         </div>
