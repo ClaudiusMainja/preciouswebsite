@@ -9,14 +9,16 @@
 <link rel="stylesheet" href="/src/main.css">
 <link rel="stylesheet" href="/src/output.css">
 </head>
-<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100  libre-baskerville-regular">
-    <!-- Theme Toggle -->
-    <button id="theme-toggle" class="fixed top-4 right-4 z-50 p-2 bg-brand-pink-500 text-white rounded-lg w-10 h-10 flex items-center justify-center text-sm shadow-lg">
-        🌓
-    </button>
+
+
 
     <!-- Navigation -->
-    <nav id="navbar" class="fixed top-0 w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md z-40 transition-all duration-300">
+     <header>
+    <nav id="navbar" class="fixed top-0 w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md z-40 transition-all duration-300 py-6">
+            <!-- Theme Toggle -->
+    <button id="theme-toggle" class="fixed top-4 right-4 z-50 p-2 bg-brand-pink-500 text-white rounded-lg w-10 h-10 flex items-center justify-center text-sm shadow-lg">
+        <img src="/assets/images/moon-01.svg" alt="Icon" w-48 h-48>
+       </button>
         <div class="container mx-auto flex justify-between items-center p-4 relative">
             <div class="text-2xl font-bold text-brand-pink-600 font-heading">Precious D Mutau</div>
             
@@ -31,8 +33,8 @@
             <ul class="hidden md:flex space-x-6">
                 <li><a href="#home" class="hover:text-brand-pink-500 transition-colors">Home</a></li>
                 <li><a href="#about" class="hover:text-brand-pink-500 transition-colors">About</a></li>
-                <li><a href="#competencies" class="hover:text-brand-pink-500 transition-colors">Competencies</a></li>
                 <li><a href="#experience" class="hover:text-brand-pink-500 transition-colors">Experience</a></li>
+                <li><a href="#competencies" class="hover:text-brand-pink-500 transition-colors">Competencies</a></li>
                 <li><a href="#campaign" class="hover:text-brand-pink-500 transition-colors">Campaigns</a></li>
             </ul>
 
@@ -41,14 +43,16 @@
                 <ul class="flex flex-col items-center space-y-4 py-4">
                     <li><a href="#home" class="mobile-nav-link">Home</a></li>
                     <li><a href="#about" class="mobile-nav-link">About</a></li>
-                    <li><a href="#competencies" class="mobile-nav-link">Competencies</a></li>
                     <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+                    <li><a href="#competencies" class="mobile-nav-link">Competencies</a></li>
                     <li><a href="#campaign" class="mobile-nav-link">Campaigns</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+</header>
 
+    <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100  libre-baskerville-regular">
     <!-- Home Section -->
     <section id="home" class="relative min-h-screen flex items-center container mx-auto px-4 pt-20">
         <div id="particle-container"></div>
