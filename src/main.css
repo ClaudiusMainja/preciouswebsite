@@ -51,9 +51,9 @@
 }
 .particle {
     position: absolute;
-    background: rgba(236, 72, 153, 0.3);
+    background: rgba(211, 41, 126, 0.774);
     border-radius: 50%;
-    animation: float 10s infinite alternate;
+    animation: float 5s infinite alternate;
 }
 @keyframes float {
     0% { transform: translateY(0); }
