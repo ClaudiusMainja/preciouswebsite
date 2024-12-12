@@ -9,14 +9,14 @@
 <link rel="stylesheet" href="/src/main.css">
 <link rel="stylesheet" href="/src/output.css">
 </head>
-<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100  libre-baskerville-regular">
+
     <!-- Theme Toggle -->
     <button id="theme-toggle" class="fixed top-4 right-4 z-50 p-2 bg-brand-pink-500 text-white rounded-lg w-10 h-10 flex items-center justify-center text-sm shadow-lg">
-        🌓
+        <img src="/assets/images/moon-01.svg" class="w-full h-full" alt="Acessibility Button">
     </button>
-
+<header>
     <!-- Navigation -->
-    <nav id="navbar" class="fixed top-0 w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md z-40 transition-all duration-300">
+    <nav id="navbar" class="fixed top-0 w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md z-40 transition-all duration-300 text-xl py-4 px-8">
         <div class="container mx-auto flex justify-between items-center p-4 relative">
             <div class="text-2xl font-bold text-brand-pink-600 font-heading">Precious D Mutau</div>
             
@@ -31,8 +31,8 @@
             <ul class="hidden md:flex space-x-6">
                 <li><a href="#home" class="hover:text-brand-pink-500 transition-colors">Home</a></li>
                 <li><a href="#about" class="hover:text-brand-pink-500 transition-colors">About</a></li>
-                <li><a href="#competencies" class="hover:text-brand-pink-500 transition-colors">Competencies</a></li>
                 <li><a href="#experience" class="hover:text-brand-pink-500 transition-colors">Experience</a></li>
+                <li><a href="#competencies" class="hover:text-brand-pink-500 transition-colors">Competencies</a></li>
                 <li><a href="#campaign" class="hover:text-brand-pink-500 transition-colors">Campaigns</a></li>
             </ul>
 
@@ -41,30 +41,34 @@
                 <ul class="flex flex-col items-center space-y-4 py-4">
                     <li><a href="#home" class="mobile-nav-link">Home</a></li>
                     <li><a href="#about" class="mobile-nav-link">About</a></li>
+                    <li><a href="#experience" class="hover:text-brand-pink-500 transition-colors">Experience</a></li>
                     <li><a href="#competencies" class="mobile-nav-link">Competencies</a></li>
-                    <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
                     <li><a href="#campaign" class="mobile-nav-link">Campaigns</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+</header>
 
+    <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100  libre-baskerville-regular text-2xl">
     <!-- Home Section -->
     <section id="home" class="relative min-h-screen flex items-center container mx-auto px-4 pt-20">
         <div id="particle-container"></div>
         <div class="grid md:grid-cols-2 gap-8 items-center z-10">
             <div class="space-y-6 animate-fade-in">
-                <h1 class="text-4xl md:text-5xl  text-brand-pink-600 libre-baskerville-bold">Hi, I am Precious D Mutau.<br> I'm a  Digital Marketing Strategist</h1>
-                <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300">
+                <h1 class="text-4xl md:text-6xl  text-brand-pink-600 libre-baskerville-bold">Hi, I am Precious D Mutau.<br> I'm a  Digital Marketing Strategist</h1>
+                <p class="text-lg md:text-2xl text-gray-600 dark:text-gray-300">
                With over 7 years of experience in creating high-impact strategies that drive measurable results.
                 </p>
                 <div class="flex space-x-4">
                     <button class="bg-brand-pink-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-xl hover:bg-brand-pink-700 transition-all">
                         Download Resume
                     </button>
+                    <a href="mailto:hello@preciousdmutau.com" target="_blank">
                     <button class="border border-brand-pink-600 text-brand-pink-600 px-4 md:px-6 py-2 md:py-3 rounded-xl hover:bg-brand-pink-50 transition-colors">
                         Contact Me
                     </button>
+                </a>
                 </div>
             </div>
             <div class="relative hidden md:block">
@@ -81,10 +85,10 @@
     <!-- About Section -->
      <div class="bg-gray-900 dark:bg-gray-800">
     <section id="about" class="container mx-auto px-4 py-16 h-min-screen">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="grid md:grid-cols-3 gap-12 items-center">
             <div>
                 <h2 class="text-3xl font-bold text-brand-pink-600 font-heading mb-6">About Me</h2>
-                <p class="text-lg text-gray-200 dark:text-gray-300 mb-4">
+                <p class="text-2xl text-gray-200 dark:text-gray-300 mb-4">
                     As a Bachelor of Commerce (Honors) in Finance holder, I offer a unique blend of financial acumen and creative vision. My innovative approach to problem-solving enables me to develop tailored solutions that drive measurable results for my clients.
                 </p>
                 <div class="space-y-3">
@@ -102,9 +106,14 @@
                     </div>
                 </div>
             </div>
+
+<div>
+    <img src="/assets/images/about img.png" alt="I am precios" class="relative z-10 rounded-xl shadow-2xl mx-auto hover:scale-105 transition-transform">
+</div>
+
             <div>
-                <h3 class="text-2xl font-semibold text-brand-pink-500 mb-4 font-heading animate-fadeInLeft">Key Specializations</h3>
-                <ul class="space-y-2 text-slate-50 dark:text-gray-400 text-xl">
+                <h3 class="text-3xl font-semibold text-brand-pink-500 mb-4 font-heading animate-fadeInLeft">Key Specializations</h3>
+                <ul class="space-y-2 text-slate-50 dark:text-gray-400 text-2xl">
                     <li>• Content creation and campaign development</li>
                     <li>• Data-driven decision making</li>
                     <li>• Social media management and paid advertising</li>
@@ -115,7 +124,7 @@
     </section>
 </div>
 
-<div class="bg-slate-50" >
+<div class="bg-slate-50" id="experience" >
 <section class="container mx-auto px-4 py-12">
     <h2 class="text-3xl  text-pink-600 mb-12 text-center libre-baskerville-bold">
         Professional Experience
@@ -131,8 +140,8 @@
                     </svg>
                 </div>
                 <div>
-                    <h3 class="text-xl libre-baskerville-bold text-gray-800">Co-Founder & Digital Marketing Strategist</h3>
-                    <p class="text-rose-700 text-lg">Blacklemur Innovations</p>
+                    <h3 class="text-2xl libre-baskerville-bold text-gray-800">Co-Founder & Digital Marketing Strategist</h3>
+                    <p class="text-rose-700 text-lg uppercase">Blacklemur Innovations |<span class="text-gray-800">| 2019-Present</span></p>
                 </div>
             </div>
             <ul class="space-y-2 pl-6">
@@ -157,8 +166,8 @@
                     </svg>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-gray-800">Founder</h3>
-                    <p class="text-pink-700 text-lg">Kadmiell Household Services</p>
+                    <h3 class="text-2xl font-semibold text-gray-800">Founder and DigitaL Marketing Strategist</h3>
+                    <p class="text-pink-700 text-xl uppercase">Kadmiell Household Services |<span class="text-gray-800"> | 2015-Present</span> </p>
                 </div>
             </div>
             <ul class="space-y-2 pl-6">
@@ -175,26 +184,26 @@
         </div>
 
         <!-- Centre for the Development of Women and Children Experience -->
-        <div class="bg-white shadow-lg rounded-2xl p-6 border-l-4 border-purple-400 transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+        <div class="bg-white shadow-lg rounded-2xl p-6 border-l-4 border-pink-400 transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
             <div class="flex items-center mb-4">
-                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                     </svg>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-gray-800">Digital Marketing Consultant</h3>
+                    <h3 class="text-2xl font-semibold text-gray-800">Digital Marketing Consultant</h3>
                     <p class="text-pink-600 text-lg">Centre for the Development of Women and Children</p>
                 </div>
             </div>
             <ul class="space-y-2 pl-6">
-                <li class="text-pink-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-purple-500 before:rounded-lg text-lg">
+                <li class="text-pink-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-pink-500 before:rounded-lg text-lg">
                     Created and managed Facebook pages
                 </li>
-                <li class="text-pink-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-purple-500 before:rounded-lg">
+                <li class="text-pink-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-pink-500 before:rounded-lg">
                     Developed content strategies for awareness
                 </li>
-                <li class="text-pink-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-purple-500 before:rounded-lg">
+                <li class="text-pink-600 relative pl-4 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-pink-500 before:rounded-lg">
                     Executed targeted community engagement campaigns
                 </li>
             </ul>
@@ -209,30 +218,30 @@
             <h2 class="text-3xl font-bold text-brand-pink-600 font-heading text-center mb-12">Core Competencies</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-md hover:shadow-xl transition-all">
-                    <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Social Media Strategy and Planning</h3>
+                    <h3 class="text-2xl font-semibold text-brand-pink-500 mb-4">Social Media Strategy and Planning</h3>
                     <p>Develop and execute integrated social media strategies aligned with overall business objectives, including campaign planning, content calendars, and audience targeting</p>
                 </div>
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
-                    <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Content Creation(visual and written)</h3>
+                    <h3 class="text-2xl font-semibold text-brand-pink-500 mb-4">Content Creation(visual and written)</h3>
                     <p>Oversee the creation of high-quality, engaging content (text and visuals) across various platforms, ensuring brand consistency and audience relevance</p>
                 </div>
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
-                    <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Analytics & Reporting</h3>
+                    <h3 class="text-2xl font-semibold text-brand-pink-500 mb-4">Analytics & Reporting</h3>
                     <p>Track, analyze, and report on key performance indicators (KPIs) across all digital marketing channels, providing data-driven insights and recommendations for optimization.</p>
                 </div>
 
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
-                    <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Paid Social Media Advertising </h3>
+                    <h3 class="text-2xl font-semibold text-brand-pink-500 mb-4">Paid Social Media Advertising </h3>
                     <p>Plan and execute targeted paid social media advertising campaigns to reach specific audiences and achieve marketing objectives.</p>
                 </div>
 
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
-                    <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Campaign Development & Execution </h3>
+                    <h3 class="text-2xl font-semibold text-brand-pink-500 mb-4">Campaign Development & Execution </h3>
                     <p> Develop and execute integrated digital marketing campaigns across multiple channels (search, social, email, display) to achieve specific marketing goals, including lead generation, brand awareness, and customer acquisition</p>
                 </div>
 
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
-                    <h3 class="text-xl font-semibold text-brand-pink-500 mb-4">Community Management & Engagement </h3>
+                    <h3 class="text-2xl font-semibold text-brand-pink-500 mb-4">Community Management & Engagement </h3>
                     <p>  Build and nurture online communities by interacting with followers, responding to inquiries, and fostering meaningful conversations.</p>
                 </div>
             </div>
@@ -245,14 +254,16 @@
                 <!-- Contact Information -->
                 <div>
                     <h3 class="text-3xl font-semibold text-brand-pink-600 mb-4">Contact</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-2 text-xl">Email: precious.dzingwe@email.com</p>
-                    <p class="text-gray-600 dark:text-gray-300 text-xl">Phone: +27 (0) XXX XXX XXXX</p>
+                    <a href="mailt0:hello@preciousdmutau.com" target="_blank">
+                    <p class="text-gray-600 dark:text-gray-300 mb-2 text-xl">Email: hello@preciousdmutau.com</p>
+                </a>
+                    <p class="text-gray-600 dark:text-gray-300 text-xl">Phone: +27 76 126 5694</p>
                 </div>
     
                 <!-- Quick Links -->
                 <div>
-                    <h3 class="text-3xl font-semibold text-brand-pink-600 mb-4">Quick Links</h3>
-                    <ul class="space-y-2 text-xl">
+                    <h3 class="text-3xl font-semibold text-brand-pink-600 mb-4 text-center">Quick Links</h3>
+                    <ul class="space-y-2 text-xl text-center">
                         <li><a href="#home" class="text-gray-600 dark:text-gray-300 hover:text-brand-pink-500 transition-colors">Home</a></li>
                         <li><a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-brand-pink-500 transition-colors">About</a></li>
                         <li><a href="#competencies" class="text-gray-600 dark:text-gray-300 hover:text-brand-pink-500 transition-colors">Competencies</a></li>
@@ -262,17 +273,17 @@
     
                 <!-- Social Media Links -->
                 <div>
-                    <h3 class="text-3xl font-semibold text-brand-pink-600 mb-4">Connect</h3>
-                    <div class="flex space-x-4 text-xl">
+                    <h3 class="text-3xl font-semibold text-brand-pink-600 mb-4">Let's Connect</h3>
+                    <div class="flex space-x-4 text-xl text-center">
                         <!-- Facebook -->
-                        <a href="https://facebook.com" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-brand-pink-500 transition-colors">
+                        <a href="https://web.facebook.com/precious.dzingwe" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-brand-pink-500 transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                             </svg>
                         </a>
     
                         <!-- Instagram -->
-                        <a href="https://instagram.com" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-brand-pink-500 transition-colors">
+                        <a href="https://www.instagram.com/preciouslanna/" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-brand-pink-500 transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -281,7 +292,7 @@
                         </a>
     
                         <!-- LinkedIn -->
-                        <a href="https://linkedin.com" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-brand-pink-500 transition-colors">
+                        <a href="https://www.linkedin.com/in/precious-dzingwe-b578448b/" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-brand-pink-500 transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                                 <rect x="2" y="9" width="4" height="12"></rect>
@@ -294,10 +305,10 @@
     
             <!-- Copyright and Attribution -->
             <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
-                <p class="text-gray-600 dark:text-gray-400 text-lg">
+                <p class="text-gray-600 dark:text-gray-400 text-xl">
                     © 2024 Precious Dzingwe. All Rights Reserved.
                 </p>
-                <p class="text-sm text-gray-500 dark:text-gray-500 mt-2">
+                <p class="text-lg text-gray-500 dark:text-gray-500 mt-2">
                     Designed and Developed by <a href="https://www.claudius-mainja.com" target="_blank" class="text-brand-pink-600 hover:underline">Claudius Mainja</a>
                 </p>
             </div>
