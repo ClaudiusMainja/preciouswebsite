@@ -246,9 +246,77 @@
         </div>
     </section>
 
-    <footer>
-
+    <footer class="bg-gray-100 dark:bg-gray-800 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-3xl font-semibold text-brand-pink-600 mb-4">Contact</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-2 text-xl">Email: precious.dzingwe@email.com</p>
+                    <p class="text-gray-600 dark:text-gray-300 text-xl">Phone: +27 (0) XXX XXX XXXX</p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-3xl font-semibold text-brand-pink-600 mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-xl">
+                        <li><a href="#home" class="text-gray-600 dark:text-gray-300 hover:text-brand-pink-500 transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-brand-pink-500 transition-colors">About</a></li>
+                        <li><a href="#competencies" class="text-gray-600 dark:text-gray-300 hover:text-brand-pink-500 transition-colors">Competencies</a></li>
+                        <li><a href="#experience" class="text-gray-600 dark:text-gray-300 hover:text-brand-pink-500 transition-colors">Experience</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media Links -->
+                <div>
+                    <h3 class="text-3xl font-semibold text-brand-pink-600 mb-4">Connect</h3>
+                    <div class="flex space-x-4 text-xl">
+                        <!-- Facebook -->
+                        <a href="https://facebook.com" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-brand-pink-500 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+    
+                        <!-- Instagram -->
+                        <a href="https://instagram.com" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-brand-pink-500 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+    
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-brand-pink-500 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Copyright and Attribution -->
+            <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
+                <p class="text-gray-600 dark:text-gray-400 text-lg">
+                    © 2024 Precious Dzingwe. All Rights Reserved.
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-500 mt-2">
+                    Designed and Developed by <a href="https://www.claudius-mainja.com" target="_blank" class="text-brand-pink-600 hover:underline">Claudius Mainja</a>
+                </p>
+            </div>
+        </div>
     </footer>
+    
+    <script>
+        // Add to existing script or create a new script tag in the main HTML
+        document.querySelectorAll('footer a[href^="http"]').forEach(link => {
+            link.setAttribute('rel', 'noopener noreferrer');
+        });
+    </script>
 
     <!-- Script Section -->
     <script>
