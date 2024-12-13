@@ -108,7 +108,7 @@
     <body class="bg-slate-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100  libre-baskerville-regular text-xl mt-40 ">
   
         <div class="bg-pink-700 dark:bg-gray-900">
-        <section class="container mx-auto px-4 py-16">
+        <section class="container mx-auto px-8 py-16">
             <div class="grid md:grid-cols-2 items-center gap-8">
                 <!-- Image Container -->
                 <div class="relative group">
@@ -196,7 +196,7 @@
         </section>
     </div>
         
-    <section class="space-y-8 mt-6 mx-20">
+    <section class="space-y-8 mt-6 container mx-auto px-2 py-16 h-min-screen">
         <h2 class="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 mb-6">
             Blacklemur Innovations
             <br>
@@ -204,14 +204,14 @@
         </h2>
 
         <!-- Blacklemur Innovations Case Study -->
-        <div class="bg-white rounded-3xl shadow-2xl p-8 grid md:grid-cols-3 gap-8 mx-12 xl:mx-20 ">
-            <div class="md:col-span-2 space-y-6">
+        <div class="bg-white rounded-3xl shadow-2xl p-8 grid md:grid-cols-3 sm:grid-cols-1 gap-8 mx-12 xl:mx-20 sm:mx-10 ">
+            <div class="md:col-span-2 space-y-6 sm:mx-auto">
                 <h3 class="text-3xl font-bold text-pink-600 mb-4">#GODIGITAL Campaign</h3>
                 <p class="text-gray-700 leading-relaxed text-lg">
                     In 2023, we launched a transformative digital marketing initiative designed to empower local small businesses through strategic digital adoption and innovative marketing techniques. Our target audience included entrepreneurs from informal sectors, non-tech-savvy business owners, and ambitious students working on emerging projects.
                 </p>
 
-                <div class="grid md:grid-cols-3 gap-4">
+                <div class="grid md:grid-cols-3 gap-3">
                     <div class="bg-pink-50 p-6 rounded-xl text-center">
                         <div class="text-4xl font-bold text-pink-600 mb-2">30</div>
                         <div class="text-gray-600 font-medium">Small Businesses Transformed</div>
@@ -235,14 +235,14 @@
                 >
             </div>
 
-            <div class="md:col-span-3">
+            <div class="md:col-span-5">
                 <div class="relative max-w-6xl mx-auto my-12">
                     <div class="bg-white shadow-2xl rounded-3xl overflow-hidden transform transition-all duration-500 hover:scale-[1.02]">
                         <div class="p-8">
-                            <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">Campaign Performance Metrics in 2023</h3>
+                            <h3 class="md:text-2xl sm:text-xl lg:text-4xl font-bold text-center text-gray-800 mb-8">Campaign Performance Metrics in 2023</h3>
                             <canvas 
                                 id="blacklemurChart" 
-                                class="w-full h-96"
+                                class="w-full h-full"
                             ></canvas>
                         </div>
                     </div>
@@ -251,31 +251,34 @@
         </div>
     </section>
 
-    <!-- Video Testimonial Section -->
-    <section class="container mx-auto px-4 py-8">
-        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
-            <iframe 
-                width="1920" 
-                height="1080" 
-                src="https://www.youtube.com/embed/o9KrXtdr3to?si=r5NK0FF6rP-4Sw_x" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                class="w-full aspect-video"
-            ></iframe>
+    <!-- Puclic Lecture vidoe of the GoDigitalCampaign -->
+    <section class="my-6 mx-12 sm:my-8">
+        <div class="bg-gray-800 rounded-xl shadow-2xl overflow-hidden">
+            <div class="w-full aspect-w-16 aspect-h-9 md:h-[1080px] md:w-[1920px]">
+                <iframe 
+                    src="https://www.youtube.com/embed/o9KrXtdr3to?si=r5NK0FF6rP-4Sw_x" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    class="w-full h-full"
+                    allowfullscreen
+                ></iframe>
+            </div>
         </div>
     </section>
         
                 <!-- Contact and Consultation -->
-                <section class="mt-12 text-center">
+                <section class="mt-12 text-center mb-20 mx-8">
                     <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-4">Let me transform your Digital Presence</h2>
                     <p class="text-gray-600 max-w-2xl mx-auto mb-6">
-                        Interested in elevating your brand's digital strategy? I offer personalized consultations to unlock your business's full digital potential.
+                        If you are interested in elevating your brand's digital strategy? I offer personalized consultations to unlock your business's full digital potential.
                     </p>
+                    <a href="mailto:hello@preciousdmutau.com">
                     <button class="bg-pink-500 text-white px-8 py-3 rounded-xl hover:bg-pink-600 transition-colors">
                         Book Consultation
                     </button>
+                </a>
                 </section>
             </div>
 
