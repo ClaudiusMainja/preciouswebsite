@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precious Dzingwe - Digital Marketing Strategist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/script.js" > </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+<link rel="stylesheet" href="/src/main.css">
+<link rel="stylesheet" href="/src/output.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+
+    .modal {
+        background: rgba(255,255,255,0.9);
+        backdrop-filter: blur(15px);
+    }
+    .skill-tag {
+        transition: all 0.3s ease;
+    }
+    .skill-tag:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+</style>
+</head>
+
+
+    <header class="fixed top-0 left-0 w-full z-50">
+ 
+        <!-- Navigation -->
+        <nav id="navbar" class="fixed top-0 w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md z-40 transition-all duration-300 text-xl py-4 px-8">
+            <div class="container mx-auto flex justify-between items-center p-4 relative">
+                <div class="flex justify-between items-center h-16">
+                    <a href="/index.html" class="flex items-center space-x-2">
+                        <img src="/assets/Logo_main logo.png" alt="logo" height="250px" width="250px" >
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-toggle" class="md:hidden focus:outline-none">
+                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+                <!-- Desktop Navigation -->
+                <ul id="desktop-nav" class="hidden md:flex space-x-6">
+                    <li><a href="/index.html" class="hover:text-brand-pink-500 transition-colors">Welcome</a></li>
+                    <li><a href="/index.html" class="hover:text-brand-pink-500 transition-colors">About</a></li>
+                    <li><a href="/index.html" class="hover:text-brand-pink-500 transition-colors">Experience</a></li>
+                    <li><a href="/index.html" class="hover:text-brand-pink-500 transition-colors">Competencies</a></li>
+                    <li><a href="/page/portfolio.html" target="_blank" class="hover:text-brand-pink-500 transition-colors">My Portfolio</a></li>
+                </ul>
+
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="
+                    md:hidden 
+                    fixed 
+                    top-0 
+                    left-0 
+                    w-full 
+                    h-full 
+                    bg-pink-500
+                    dark:bg-gray-800 
+                    transform 
+                    -translate-x-full 
+                    transition-transform 
+                    duration-300 
+                    ease-in-out 
+                    z-40
+                ">
+                    <div class="relative w-full p-4">
+                        <!-- Close Button within Mobile Menu -->
+                        <button id="mobile-menu-close" class="absolute top-4 right-4 focus:outline-none text-white text-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <ul class="flex flex-col items-center space-y-6 pt-16 bg-pink-500/70">
+                        <li><a href="/index.html" class="mobile-nav-link text-2xl hover:text-brand-pink-500 transition-colors">Welcome</a></li>
+                        <li><a href="/index.html" class="mobile-nav-link text-2xl hover:text-brand-pink-500 transition-colors">About Me</a></li>
+                        <li><a href="/index.html" class="mobile-nav-link text-2xl hover:text-brand-pink-500 transition-colors">My Experience</a></li>
+                        <li><a href="/index.html" class="mobile-nav-link text-2xl hover:text-brand-pink-500 transition-colors">Competencies</a></li>
+                        <li><a href="/page/portfolio.html" class="mobile-nav-link text-2xl hover:text-brand-pink-500 transition-colors"> My Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+                       <!-- Theme Toggle -->
+                       <button id="theme-toggle" class="fixed top-96 right-4 z-50 p-2 bg-brand-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm shadow-lg">
+                        <img src="/assets/images/moon-01.svg" class="w-96 h-96" alt="Acessibility Button">
+                    </button>
+
+    <body class="bg-slate-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100  libre-baskerville-regular text-xl mt-40 ">
+  
+        <div class="bg-pink-700 dark:bg-gray-900">
+        <section class="container mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-2 items-center gap-8">
+                <!-- Image Container -->
+                <div class="relative group">
+                    <div class="overflow-hidden rounded-xl shadow-xl transition-all duration-300">
+                        <img 
+                            src="/assets/images/about img.png" 
+                            alt="Precious Mutau" 
+                            class="w-full h-[700px] object-cover transform transition-transform duration-300 group-hover:scale-105"
+                        >
+                    </div>
+                    
+                    <!-- Hover Overlay -->
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="bg-white/80 p-6 rounded-xl shadow-lg text-center">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Digital Strategist | Brand Architect</h3>
+                            <p class="text-gray-600">Transforming Digital Landscapes</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Text Container -->
+                <div class="space-y-4">
+                    <h1 class="text-4xl font-bold text-white dark:text-pink-500 leading-tight">
+                        I am Precious D. Mutau - Your Digital Marketing Strategist
+                    </h1>
+                  
+                    <p class="text-white leading-relaxed">
+                        With a passion for digital innovation and strategic branding, I help businesses transform their online presence and create meaningful connections with their audience.
+                    </p>
+                 
+    
+                    <!-- Professional Skills Section -->
+                    <div class="mt-8">
+                        <h2 class="text-2xl font-bold text-pink-600 mb-6 bg-white px-4 py-4 rounded-xl">Professional Skill Matrix</h2>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white rounded-xl p-4 text-center shadow-md hover:shadow-xl transition-all group">
+                                <div class="bg-pink-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-pink-200 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-semibold text-gray-800 mb-1">Social Media</h3>
+                                <p class="text-xs text-gray-500">Advanced Platform Strategies</p>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 text-center shadow-md hover:shadow-xl transition-all group">
+                                <div class="bg-pink-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-pink-200 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-semibold text-gray-800 mb-1">Digital Strategy</h3>
+                                <p class="text-xs text-gray-500">Digital Transformation</p>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 text-center shadow-md hover:shadow-xl transition-all group">
+                                <div class="bg-pink-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-pink-200 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-semibold text-gray-800 mb-1">Brand Analytics</h3>
+                                <p class="text-xs text-gray-500">Data-Driven Insights</p>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 text-center shadow-md hover:shadow-xl transition-all group">
+                                <div class="bg-pink-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-pink-200 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.768-.293-1.47-.77-2M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.768.293-1.47.77-2M15 14a3 3 0 11-6 0 3 3 0 016 0zm6 2a2 2 0 11-4 0 2 2 0 014 0zm-12 0a2 2 0 11-4 0 2 2 0 014 0z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-semibold text-gray-800 mb-1">Community Engagement</h3>
+                                <p class="text-xs text-gray-500">Audience Strategies</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4 pt-4">
+                        <a href="mailto:hello@preciousdmutau.com" class="bg-white text-gray-800 px-12 py-3 rounded-lg hover:bg-pink-700 hover:text-white dark:hover:text-white transition-colors">
+                           Let's Talk
+                        </a>
+                        <a href="#" class="border dark:border-pink-600 dark:text-pink-600 dark:hover:text-white px-6 py-3 rounded-lg hover:bg-pink-600 text-white transition-colors">
+                          My Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        
+    <section class="space-y-8 mt-6 mx-20">
+        <h2 class="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 mb-6">
+            Blacklemur Innovations
+            <br>
+            <span class="text-3xl text-gray-800 dark:text-white font-medium">Case Study Showcase</span>
+        </h2>
+
+        <!-- Blacklemur Innovations Case Study -->
+        <div class="bg-white rounded-3xl shadow-2xl p-8 grid md:grid-cols-3 gap-8 mx-12 xl:mx-20 ">
+            <div class="md:col-span-2 space-y-6">
+                <h3 class="text-3xl font-bold text-pink-600 mb-4">#GODIGITAL Campaign</h3>
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    In 2023, we launched a transformative digital marketing initiative designed to empower local small businesses through strategic digital adoption and innovative marketing techniques. Our target audience included entrepreneurs from informal sectors, non-tech-savvy business owners, and ambitious students working on emerging projects.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-pink-50 p-6 rounded-xl text-center">
+                        <div class="text-4xl font-bold text-pink-600 mb-2">30</div>
+                        <div class="text-gray-600 font-medium">Small Businesses Transformed</div>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-xl text-center">
+                        <div class="text-4xl font-bold text-purple-600 mb-2">100%</div>
+                        <div class="text-gray-600 font-medium">Social Media Growth</div>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-xl text-center">
+                        <div class="text-4xl font-bold text-blue-600 mb-2">25%</div>
+                        <div class="text-gray-600 font-medium">Increase in Business Inquiries</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center">
+                <img 
+                    src="/assets/images/pUBLIC lECTURE - Precious.png" 
+                    alt="Go-Digital Campaign" 
+                    class="rounded-2xl shadow-lg transform transition hover:scale-105 duration-300 max-h-96 object-cover"
+                >
+            </div>
+
+            <div class="md:col-span-3">
+                <div class="relative max-w-6xl mx-auto my-12">
+                    <div class="bg-white shadow-2xl rounded-3xl overflow-hidden transform transition-all duration-500 hover:scale-[1.02]">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">Campaign Performance Metrics in 2023</h3>
+                            <canvas 
+                                id="blacklemurChart" 
+                                class="w-full h-96"
+                            ></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Testimonial Section -->
+    <section class="container mx-auto px-4 py-8">
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <iframe 
+                width="1920" 
+                height="1080" 
+                src="https://www.youtube.com/embed/o9KrXtdr3to?si=r5NK0FF6rP-4Sw_x" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                class="w-full aspect-video"
+            ></iframe>
+        </div>
+    </section>
+        
+                <!-- Contact and Consultation -->
+                <section class="mt-12 text-center">
+                    <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-4">Let me transform your Digital Presence</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto mb-6">
+                        Interested in elevating your brand's digital strategy? I offer personalized consultations to unlock your business's full digital potential.
+                    </p>
+                    <button class="bg-pink-500 text-white px-8 py-3 rounded-xl hover:bg-pink-600 transition-colors">
+                        Book Consultation
+                    </button>
+                </section>
+            </div>
+
+    </body>
+    <footer class="bg-gray-900 dark:bg-gray-800 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-3xl font-semibold text-brand-pink-600 mb-4">Contact</h3>
+                    <a href="mailt0:hello@preciousdmutau.com" target="_blank">
+                    <p class="text-white dark:text-gray-300 mb-2 text-2xl">Email: hello@preciousdmutau.com</p>
+                </a>
+                    <p class="text-white dark:text-gray-300 text-2xl">Phone: +27 76 126 5694</p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-3xl font-semibold text-brand-pink-600 mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-xl ">
+                        <li><a href="/index.html" class="text-white dark:text-gray-300 hover:text-brand-pink-500 transition-colors">Home</a></li>
+                        <li><a href="/index.html" class="text-white dark:text-gray-300 hover:text-brand-pink-500 transition-colors">About</a></li>
+                        <li><a href="/index.html" class="text-white dark:text-gray-300 hover:text-brand-pink-500 transition-colors">Competencies</a></li>
+                        <li><a href="/index.html" class="text-white dark:text-gray-300 hover:text-brand-pink-500 transition-colors">Experience</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media Links -->
+                <div>
+                    <h3 class="text-3xl font-semibold text-brand-pink-600 mb-4">Let's Connect</h3>
+                    <div class="flex space-x-4 text-xl center-items">
+                        <!-- Facebook -->
+                        <a href="https://web.facebook.com/precious.dzingwe" target="_blank" class="text-white dark:text-gray-300 hover:text-brand-pink-500 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+    
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/preciouslanna/" target="_blank" class="text-white dark:text-gray-300 hover:text-brand-pink-500 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+    
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/precious-dzingwe-b578448b/" target="_blank" class="text-white dark:text-gray-300 hover:text-brand-pink-500 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Copyright and Attribution -->
+            <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
+                <p class="text-white dark:text-gray-400 text-xl">
+                    © 2024 Precious Dzingwe. All Rights Reserved.
+                </p>
+                <p class="text-lg text-gray-500 dark:text-gray-500 mt-2">
+                    Designed and Developed by <a href="https://www.claudius-mainja.com" target="_blank" class="text-brand-pink-600 hover:underline">Claudius Mainja</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('blacklemurChart');
+            
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Start', 'January', 'February', 'March', 'April', 'May', 'June','July','August','September','October','November'],
+                    datasets: [{
+                        label: 'Social Media Engagement',
+                        data: [10,15,20, 35, 60, 70, 75, 90, 80, 95, 100],
+                        borderColor: 'rgb(236, 72, 153)',
+                        backgroundColor: 'rgba(236, 72, 153, 0.2)',
+                        borderWidth: 3,
+                        tension: 0.4,
+                        pointBackgroundColor: 'rgb(236, 72, 153)',
+                        pointRadius: 6,
+                        pointHoverRadius: 8
+                    }, {
+                        label: 'Business Inquiries',
+                        data: [5, 10, 15, 20, 22, 25, 33, 40, 80, 70,90],
+                        borderColor: 'rgb(59, 130, 246)',
+                        backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                        borderWidth: 3,
+                        tension: 0.4,
+                        pointBackgroundColor: 'rgb(59, 130, 246)',
+                        pointRadius: 6,
+                        pointHoverRadius: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    animation: {
+                        duration: 2000,
+                        easing: 'easeOutQuart'
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: 'rgba(0,0,0,0.05)'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                            labels: {
+                                usePointStyle: true,
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0,0,0,0.8)',
+                            titleColor: 'white',
+                            bodyColor: 'white'
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        // Add to existing script or create a new script tag in the main HTML
+        document.querySelectorAll('footer a[href^="http"]').forEach(link => {
+            link.setAttribute('rel', 'noopener noreferrer');
+        });
+    </script>
+
+    <!-- Script Section -->
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        themeToggle.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const mobileMenuClose = document.getElementById('mobile-menu-close');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navbar = document.getElementById('navbar');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            // Mobile menu open
+            mobileMenuToggle.addEventListener('click', () => {
+                mobileMenu.classList.remove('-translate-x-full');
+            });
+
+            // Mobile menu close
+            mobileMenuClose.addEventListener('click', () => {
+                mobileMenu.classList.add('-translate-x-full');
+            });
+
+            // Close mobile menu when a link is clicked
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('-translate-x-full');
+                });
+            });
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('shadow-md', 'py-3');
+                    navbar.classList.remove('py-4');
+                } else {
+                    navbar.classList.remove('shadow-md', 'py-3');
+                    navbar.classList.add('py-4');
+                }
+            });
+        });
+
+                // GSAP Animations
+                gsap.registerPlugin(ScrollTrigger);
+        
+        gsap.utils.toArray('.case-study-card').forEach(card => {
+            gsap.from(card, {
+                scrollTrigger: {
+                    trigger: card,
+                    start: 'top 80%',
+                },
+                opacity: 0,
+                y: 50,
+                duration: 0.8,
+                ease: 'power2.out'
+            });
+        });
+
+
+    </script>
+</html>
